@@ -1,0 +1,140 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+   <!--overview start-->
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa-laptop"></i> COVID-19 Coronavirus Tracker</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
+              <li><i class="fa fa-laptop"></i>COVID-19 Coronavirus Tracker</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="row">
+
+       
+          <!--/.col-->
+
+
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="info-box red-bg">
+              <i class="fa fa-search-plus"></i>
+              <div class="count cnt1">Loading...</div>
+              <div class="title">CONFIRMED</div>
+            </div>
+            <!--/.info-box-->
+          </div>
+          <!--/.col-->
+
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="info-box orange-bg">
+              <i class="fa fa-user-plus"></i>
+              <div class="count cnt2">Loading...</div>
+              <div class="title">CONFIRMED (TODAY)</div>
+            </div>
+            <!--/.info-box-->
+          </div>
+
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="info-box dark-bg">
+             <i class="fa fa-user-times"></i>
+              <div class="count cnt3">Loading...</div>
+              <div class="title">DEATHS</div>
+            </div>
+            <!--/.info-box-->
+          </div>
+          <!--/.col-->
+
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="info-box green-bg">
+              <i class="fa fa-user-md"></i>
+              <div class="count cnt4">Loading...</div>
+              <div class="title">RECOVERED</div>
+            </div>
+            <!--/.info-box-->
+          </div>
+          <!--/.col-->
+
+       
+
+        </div>
+        <!--/.row-->
+
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2><i class="fa fa-map-marker red"></i><strong>Countries</strong></h2>
+                <div class="panel-actions">
+                  <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+                  <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                  <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+                </div>
+              </div>
+              <div class="panel-body-map">
+                <div id="map" style="height:380px;"></div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+        <!-- Today status end -->
+
+
+
+        <div class="row">
+
+          <div class="col-lg-12 col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2><i class="fa fa-flag-o red"></i><strong>Timeline</strong></h2>
+                <div class="panel-actions">
+        @*          <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+                  <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                  <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>*@
+                </div>
+              </div>
+              <div class="panel-body">
+                <table class="table bootstrap-datatable countries">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Country</th>
+                      <th>Date</th>
+                      <th>Confirmed</th>
+                      <th>New Confirmed</th>
+                      <th>Deaths</th>
+                      <th>New Deaths</th>
+                      <th>Recovered</th>
+                      <th>New Recovered</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbl_loadtimeline">
+                   
+                  
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- statics end -->
+
+       
+<script src="~/Scripts/Index.js"></script>
